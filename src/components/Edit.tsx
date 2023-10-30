@@ -47,6 +47,7 @@ export default function Edit(): JSX.Element {
     useEffect(() => {
         getListfilm();
     }, []);
+
     const [isOpen, setIsOpen] = useState(false);
     const { id } = useParams();
     const thisfilm = listfilm?.find((film) => String(film.id) == id);
@@ -59,6 +60,7 @@ export default function Edit(): JSX.Element {
     const [clip, setClip] = useState<string>();
     const [image, setImage] = useState<string>();
     const [success, setSuccess] = useState<string>();
+
     useEffect(() => {
         if (
             !title &&
@@ -78,6 +80,7 @@ export default function Edit(): JSX.Element {
             setImage(thisfilm?.image);
         }
     }, [listfilm]);
+    
     const handleUpdateMovie = async (event: React.SyntheticEvent) => {
         event.preventDefault();
         try {

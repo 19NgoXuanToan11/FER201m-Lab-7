@@ -57,6 +57,7 @@ export const AuthProvider = ({ children }: AuthProviderProps): JSX.Element => {
     function resetPassword(email: string): Promise<void> {
         return sendPasswordResetEmail(auth, email);
     }
+    
     useEffect(() => {
         //function that firebase notifies you if a user is set
         const unsubsrcibe = auth.onAuthStateChanged((user) => {
@@ -72,6 +73,7 @@ export const AuthProvider = ({ children }: AuthProviderProps): JSX.Element => {
         resetPassword,
         auth,
     };
+
     return (
         <AuthContext.Provider value={values}>{children}</AuthContext.Provider>
     );

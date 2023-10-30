@@ -8,6 +8,7 @@ type Props = {
 
 export default function Protected({ children }: Props) {
     const { user } = UserAuth();
+    
     if (!user) {
         return <Navigate to="/" />;
     }

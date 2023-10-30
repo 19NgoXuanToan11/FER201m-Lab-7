@@ -45,6 +45,7 @@ export default function Film(): JSX.Element {
     useEffect(() => {
         getListfilm();
     }, []);
+    
     const mystyle = {
         width: "100%",
         height: "500px",

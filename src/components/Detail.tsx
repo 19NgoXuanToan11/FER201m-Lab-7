@@ -46,9 +46,11 @@ export default function Detail(): JSX.Element {
     useEffect(() => {
         getListfilm();
     }, []);
+
     const [isOpen, setIsOpen] = useState(false);
     const { id } = useParams();
     const thisfilm = listfilm?.find((film) => String(film.id) === id);
+
     return (
         <>
             <div className="row container">

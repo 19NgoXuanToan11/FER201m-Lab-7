@@ -70,8 +70,10 @@ export default function Dashboard() {
     useEffect(() => {
         getListfilm();
     }, []);
+
     //delete
     const [open, setOpen] = useState(false);
+    
     function Deletefilm(id: number | undefined) {
         try {
             setOpen(false);
@@ -93,6 +95,7 @@ export default function Dashboard() {
             }
         }
     }
+
     //add new movie
     const [id, setId] = useState<number>();
     const [title, setTitle] = useState("");
@@ -103,11 +106,9 @@ export default function Dashboard() {
     const [clip, setClip] = useState("");
     const [image, setImage] = useState("");
     const [success, setSuccess] = useState("");
-
     const handleClickOpen = () => {
         setOpen(true);
     };
-
     const handleClose = () => {
         setOpen(false);
     };

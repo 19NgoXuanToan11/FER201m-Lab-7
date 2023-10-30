@@ -8,7 +8,6 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 export default function BottomNav() {
     const [value, setValue] = React.useState("recents");
-
     const handleChange = (event: React.SyntheticEvent, newValue: string) => {
         setValue(newValue);
     };

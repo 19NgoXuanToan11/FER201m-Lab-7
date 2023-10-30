@@ -44,6 +44,7 @@ function NavBar() {
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
     };
+    
     return (
         <AppBar position="static" className="purple darken-3">
             <Container maxWidth="xl">

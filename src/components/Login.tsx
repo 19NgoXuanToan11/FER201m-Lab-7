@@ -56,11 +56,13 @@ export default function Login() {
             console.log(error);
         }
     };
+
     useEffect(() => {
         if (user != null) {
             navigate("/dashboard");
         }
     }, [user]);
+    
     return (
         <ThemeProvider theme={defaultTheme}>
             <Container component="main" maxWidth="xs">

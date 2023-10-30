@@ -15,6 +15,7 @@ import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import Edit from "./components/Edit";
 import BottomNav from "./components/BottomNav";
+
 function App(): JSX.Element {
     return (
         <>

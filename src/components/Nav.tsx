@@ -14,6 +14,7 @@ function Nav(): JSX.Element {
             console.log(error);
         }
     };
+    
     return (
         <nav>
             <div className="nav-wrapper purple darken-3">
