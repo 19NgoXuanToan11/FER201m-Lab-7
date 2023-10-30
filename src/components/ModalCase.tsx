@@ -13,6 +13,7 @@ type ModalProps = {
     setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
     thisfilm: listFilm | undefined;
 };
+
 export default function ModalCase({ setIsOpen, thisfilm }: ModalProps) {
     return (
         <div className="modal-show" onClick={() => setIsOpen(false)}>
